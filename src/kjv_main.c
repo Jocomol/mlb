@@ -20,7 +20,7 @@ License: Public domain
 #include "strutil.h"
 
 const char *
-usage = "usage: kjv [flags] [reference...]\n"
+usage = "usage: mlb [flags] [reference...]\n"
     "\n"
     "Flags:\n"
     "  -A num  show num verses of context after matching verses\n"
@@ -129,7 +129,7 @@ main(int argc, char *argv[])
     if (argc == optind) {
         using_history();
         while (true) {
-            char *input = readline("kjv> ");
+            char *input = readline("mlb> ");
             if (input == NULL) {
                 break;
             }
@@ -155,3 +155,4 @@ main(int argc, char *argv[])
 
     return 0;
 }
+
