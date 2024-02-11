@@ -25,7 +25,7 @@ src/strutil.o: src/strutil.h src/strutil.c
 
 data/kjv_data.o: src/kjv_data.h data/kjv_data.c
 
-data/kjv_data.c: data/kjv.tsv data/generate.awk src/kjv_data.h
+data/kjv_data.c: data/kjv.csv data/generate.awk src/kjv_data.h
 	awk -f data/generate.awk $< > $@
 
 .PHONY: clean

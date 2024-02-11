@@ -145,3 +145,4 @@ kjv_render(const kjv_ref *ref, const kjv_config *config)
     kjv_output(ref, stdout, config);
     return 0;
 }
+
