@@ -10,6 +10,7 @@ LDLIBS += -lreadline
 
 mlb: $(OBJS)
 	$(CC) -o $@ $(LDFLAGS) $(OBJS) $(LDLIBS)
+	cp ./mlb ~/.local/bin
 
 src/kjv_main.o: src/kjv_main.c src/kjv_config.h src/kjv_data.h src/kjv_match.h src/kjv_ref.h src/kjv_render.h src/strutil.h
 
